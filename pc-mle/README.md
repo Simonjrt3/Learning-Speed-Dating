@@ -20,6 +20,8 @@ python pc_mle_analysis.py --data ../speeddating.csv --mode both
 ```
 
 The `both` mode runs the all-data benchmark and then the pre-date model.
+Both experiments are exported by default to `pc-mle/pc_mle_all.bif` and
+`pc-mle/pc_mle_pre_date.bif`. Use `--output-dir` to choose another directory.
 
 Run one experiment:
 
