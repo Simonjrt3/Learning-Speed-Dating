@@ -389,6 +389,25 @@ def posterior_probabilities(
     return np.asarray(probabilities), non_finite_count
 
 
+def export_model(model: object, output_path: str | Path) -> Path:
+    """Export a fitted pgmpy network as a BIF file."""
+    try:
+        from pgmpy.readwrite import BIFWriter
+    except ImportError as exc:
+        raise ImportError(
+            "This step requires pgmpy. Install it with `pip install pgmpy`."
+        ) from exc
+
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    writer = BIFWriter(model)
+    if hasattr(writer, "write"):
+        writer.write(filename=str(path))
+    else:
+        writer.write_bif(filename=str(path))
+    return path
+
+
 def tune_threshold(
     model: object,
     training_data: pd.DataFrame,
@@ -585,6 +604,12 @@ def _parse_args() -> argparse.Namespace:
         help="Run both feature settings, or select one setting.",
     )
     parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path(__file__).resolve().parent,
+        help="Directory for exported PC-MLE BIF models.",
+    )
+    parser.add_argument(
         "--max-features",
         type=int,
         default=20,
@@ -621,6 +646,11 @@ def main() -> None:
         print("held-out metrics:")
         for name, value in result.metrics.items():
             print(f"  {name}: {value:.4f}")
+        export_path = export_model(
+            result.model,
+            args.output_dir / f"pc_mle_{result.mode}.bif",
+        )
+        print(f"exported BIF: {export_path}")
 
 
 if __name__ == "__main__":
