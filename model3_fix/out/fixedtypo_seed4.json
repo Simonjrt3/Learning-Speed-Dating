@@ -1,0 +1,4 @@
+{
+ "ok": false,
+ "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop."
+}

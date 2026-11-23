@@ -1,0 +1,56 @@
+% ------------------------------------------------------------------------------------------------
+% Appendix for Section~\ref{sec:model3fix}. Paste among the appendices.
+% ------------------------------------------------------------------------------------------------
+\section{Details of the Model 3 repair}\label{app:model3fix}
+
+\paragraph{Reproduction.} We ran the committed script unchanged, in its pre-date
+mode with ten features (pgmpy <<pgmpy>>, scikit-learn <<sklearn>>), on the committed
+\texttt{data/speeddating.csv}. For the repairs we reuse its loading, preprocessing (median
+imputation, five quantile bins learned on training rows, categorical codes with a state for unseen
+categories), PC call (stable variant, $\chi^2$ test, $\alpha=0.05$, at most three conditioning
+variables \cite{spirtes2000causation}) and threshold rule (the training-set F1 maximiser). Our own
+code only fits the CPTs and computes $P(\texttt{match}\mid\text{Markov blanket})\propto
+P(\texttt{match}\mid\mathrm{pa})\prod_{c}P(c\mid\mathrm{pa}(c))$ over the children $c$ of
+\texttt{match}. Unseen parent configurations are uniform, as in pgmpy's MLE. On the team's split it
+reproduces the committed run exactly: the same ten variables, the same <<orig_edges>> edges, threshold,
+AUC, F1 and log loss.
+
+\paragraph{The fixes.} (1) \texttt{sincere\_o} is removed from the candidate pool. (2)
+\texttt{field} (<<field_values>> free-text values) is replaced by the 18-category
+\texttt{field\_cd} from the original study file (joined row by row, after checking that wave and
+both decisions agree on all <<n_rows>> rows); \texttt{expected\_num\_interested\_in\_me}
+(<<enii_missing>> missing, asked only in some waves) and \texttt{wave} (an event identifier) are
+dropped; \texttt{d\_age} is kept, since it is the one \texttt{d\_} column that is a genuine
+difference known before the date. This leaves <<n_lr_vars>> candidates. Mutual information is
+computed on training rows only, minus the Miller--Madow bias term $(r_X-1)(r_Y-1)/2N$ nats
+\cite{miller1955note}. For \texttt{field} alone that term is <<field_bias>> millinats.
+(3) The five forced edges into \texttt{match} are removed, so PC alone decides its family. In rows
+``as committed'' to 2, a forced edge that would close a loop costs one learned edge (pgmpy, and so
+the committed script, would stop instead). (4) CPTs use a BDeu prior with equivalent sample size 5
+(pseudo-count $5/(q_i r_i)$ per cell). (5) The structure of \texttt{match} is fixed:
+$\texttt{match}\to X$ for each of the ten selected variables, with no other edges.
+
+\paragraph{Evaluation.} ``Row split'' is the team's stratified 85/15 split (seed 42). ``New events''
+uses five folds grouped by wave (\texttt{GroupKFold}; test folds of <<wave_sizes>> rows). No
+participant, and neither row of any date, appears on both sides. The match rate differs between
+waves (<<wave_min>> to <<wave_max>>), which no pre-date model can know for a new event. AUC and log
+loss are computed on the pooled out-of-fold predictions. Intervals resample the 21 waves with
+replacement (2{,}000 times). Python's hash seed is fixed (\texttt{PYTHONHASHSEED=0}) so that runs
+are reproducible; for the committed script on the team's split, <<hs_seeds>> different seeds give the
+same network.
+
+\paragraph{Sensitivity and alternatives.} The repaired network's new-event AUC is
+<<nb_folds>> in the five folds. It barely moves with the number of variables (<<nb_k5>> with five,
+<<nb_k20>> with twenty) or the prior strength (<<nb_e1>> with ESS 1, <<nb_e20>> with ESS 20).
+After fixes 1--4, PC links \texttt{match} to <<kids>> variables in the five folds. Learned
+structures that add edges between the predictors fit within-event patterns that do not transfer.
+Tree-augmented naive Bayes \cite{friedman1997bayesian} scores <<tan_their>> on the row split but
+<<tan_wave>> on new events. PC's edges on top of naive Bayes score best of all on the row split
+(<<pcnb_their>>) and near chance on new events (<<pcnb_wave>>). The repaired network and the
+logistic regression are statistically indistinguishable (difference <<nb_minus_lr>>, 95\%
+interval <<nb_minus_lr_ci>>).
+
+\paragraph{Code.} Everything is in the folder \texttt{code/model3\_fix/}: the reproduction
+(\texttt{run\_orig.py}), the fixes as switches (\texttt{lib.py}), the step table
+(\texttt{ablation.py}, \texttt{variants.py}, \texttt{references.py}), the intervals
+(\texttt{summarize.py}) and the figure. It imports the committed script unchanged.

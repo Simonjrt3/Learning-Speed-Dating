@@ -1,0 +1,145 @@
+{
+ "config": {
+  "name": "recode",
+  "leak": false,
+  "forced": true,
+  "recode": true,
+  "mi_correct": true,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "their",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "parents": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "d_age",
+    "age_o",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 3125,
+   "edges": [
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "music"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "music"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "d_age",
+     "age_o"
+    ],
+    [
+     "d_age",
+     "match"
+    ],
+    [
+     "age_o",
+     "match"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "race_o",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "race_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ]
+   ],
+   "threshold": 0.2631578947368421,
+   "unseen": 0.07398568019093078,
+   "frac01": 0.492442322991249,
+   "nonfinite": 1,
+   "dropped": 2,
+   "train_auc": 0.9000997419522763,
+   "auc": 0.5600874166091556,
+   "pr_auc": 0.20280277942644398,
+   "log_loss": 3.133472856635588,
+   "brier": 0.1758405000414772,
+   "f1": 0.2594594594594595,
+   "acc": 0.6730310262529833
+  }
+ ],
+ "pooled_auc": 0.5600874166091556,
+ "pooled_log_loss": 3.133472856635588,
+ "pooled_brier": 0.1758405000414772,
+ "seconds": 27.3
+}

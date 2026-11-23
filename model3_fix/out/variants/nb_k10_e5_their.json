@@ -1,0 +1,80 @@
+{
+ "kind": "nb",
+ "k": 10,
+ "ess": 5.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ],
+    [
+     "match",
+     "clubbing"
+    ],
+    [
+     "match",
+     "age"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "reading"
+    ],
+    [
+     "match",
+     "race_o"
+    ]
+   ],
+   "threshold": 0.1885992035641618,
+   "auc": 0.6374649183344835,
+   "pr_auc": 0.2618244600032294,
+   "log_loss": 0.43281800432424605,
+   "brier": 0.13334049241044482,
+   "f1": 0.33182503770739064,
+   "acc": 0.6475735879077168
+  }
+ ],
+ "pooled_auc": 0.6374649183344835,
+ "pooled_log_loss": 0.43281800432424605,
+ "pooled_brier": 0.13334049241044482,
+ "fold_auc": [
+  0.6374649183344835
+ ],
+ "fold_f1": [
+  0.33182503770739064
+ ]
+}

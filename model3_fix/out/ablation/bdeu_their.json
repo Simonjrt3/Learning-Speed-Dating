@@ -1,0 +1,127 @@
+{
+ "config": {
+  "name": "bdeu",
+  "leak": false,
+  "forced": false,
+  "recode": true,
+  "mi_correct": true,
+  "smooth": 5.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "their",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "parents": [],
+   "n_configs": 1,
+   "edges": [
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "d_age",
+     "age_o"
+    ],
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "music"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "music"
+    ],
+    [
+     "race_o",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "race_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ]
+   ],
+   "threshold": 0.19959305924276746,
+   "unseen": 0.0,
+   "frac01": 0.0,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.742288380514043,
+   "auc": 0.6420312859443295,
+   "pr_auc": 0.25927975587813695,
+   "log_loss": 0.4680733344720021,
+   "brier": 0.1355702936548453,
+   "f1": 0.31278195488721805,
+   "acc": 0.6364359586316627
+  }
+ ],
+ "pooled_auc": 0.6420312859443295,
+ "pooled_log_loss": 0.4680733344720021,
+ "pooled_brier": 0.1355702936548453,
+ "seconds": 22.3
+}

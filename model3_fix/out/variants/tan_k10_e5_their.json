@@ -1,0 +1,116 @@
+{
+ "kind": "tan",
+ "k": 10,
+ "ess": 5.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ],
+    [
+     "match",
+     "clubbing"
+    ],
+    [
+     "match",
+     "age"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "reading"
+    ],
+    [
+     "match",
+     "race_o"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "reading"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "music",
+     "age"
+    ],
+    [
+     "age",
+     "d_age"
+    ],
+    [
+     "d_age",
+     "age_o"
+    ],
+    [
+     "age_o",
+     "race_o"
+    ],
+    [
+     "race_o",
+     "pref_o_shared_interests"
+    ]
+   ],
+   "threshold": 0.18145790403336215,
+   "auc": 0.6466114561766736,
+   "pr_auc": 0.2674637284627077,
+   "log_loss": 0.43689332219729454,
+   "brier": 0.13439077244174694,
+   "f1": 0.3338735818476499,
+   "acc": 0.6730310262529833
+  }
+ ],
+ "pooled_auc": 0.6466114561766736,
+ "pooled_log_loss": 0.43689332219729454,
+ "pooled_brier": 0.13439077244174694,
+ "fold_auc": [
+  0.6466114561766736
+ ],
+ "fold_f1": [
+  0.3338735818476499
+ ]
+}

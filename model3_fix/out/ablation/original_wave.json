@@ -1,0 +1,801 @@
+{
+ "config": {
+  "name": "original",
+  "leak": true,
+  "forced": true,
+  "recode": false,
+  "mi_correct": false,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "wave",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "tvsports",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "reading",
+    "intelligence",
+    "clubbing"
+   ],
+   "parents": [
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "tvsports",
+    "sincere_o"
+   ],
+   "n_configs": 388800,
+   "edges": [
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "intelligence"
+    ],
+    [
+     "shared_interests_important",
+     "reading"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "intelligence",
+     "field"
+    ],
+    [
+     "intelligence",
+     "clubbing"
+    ],
+    [
+     "intelligence",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "intelligence",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "field"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "intelligence"
+    ],
+    [
+     "tvsports",
+     "field"
+    ],
+    [
+     "tvsports",
+     "clubbing"
+    ],
+    [
+     "tvsports",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "tvsports",
+     "expected_num_matches"
+    ],
+    [
+     "tvsports",
+     "intelligence"
+    ],
+    [
+     "tvsports",
+     "reading"
+    ],
+    [
+     "tvsports",
+     "shared_interests_important"
+    ],
+    [
+     "tvsports",
+     "match"
+    ],
+    [
+     "pref_o_shared_interests",
+     "field"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ]
+   ],
+   "threshold": 0.3,
+   "unseen": 0.8390452876376989,
+   "frac01": 0.08567931456548347,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.8904652086597665,
+   "auc": 0.5075000000000001,
+   "pr_auc": 0.16596858054466884,
+   "log_loss": 1.3305942859723479,
+   "brier": 0.24367939065820132,
+   "f1": 0.25234741784037557,
+   "acc": 0.22031823745410037
+  },
+  {
+   "fold": 1,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "tvsports",
+    "clubbing",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "age",
+    "age_o"
+   ],
+   "parents": [
+    "tvsports",
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "sincere_o"
+   ],
+   "n_configs": 418000,
+   "edges": [
+    [
+     "tvsports",
+     "field"
+    ],
+    [
+     "tvsports",
+     "age"
+    ],
+    [
+     "tvsports",
+     "clubbing"
+    ],
+    [
+     "tvsports",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "tvsports",
+     "expected_num_matches"
+    ],
+    [
+     "tvsports",
+     "shared_interests_important"
+    ],
+    [
+     "tvsports",
+     "match"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "age",
+     "field"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "sincere_o",
+     "age_o"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ]
+   ],
+   "threshold": 0.2857142857142857,
+   "unseen": 0.8783943329397875,
+   "frac01": 0.06257378984651712,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.8874756352150223,
+   "auc": 0.5131232320614973,
+   "pr_auc": 0.16241536210015403,
+   "log_loss": 1.087879931923528,
+   "brier": 0.24282232280207355,
+   "f1": 0.2628382109331861,
+   "acc": 0.21192443919716647
+  },
+  {
+   "fold": 2,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "wave",
+    "age",
+    "age_o",
+    "clubbing"
+   ],
+   "parents": [
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "sincere_o",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 331360,
+   "edges": [
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "wave"
+    ],
+    [
+     "clubbing",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "clubbing",
+     "expected_num_matches"
+    ],
+    [
+     "field",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "wave"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "wave"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "age",
+     "field"
+    ],
+    [
+     "age",
+     "wave"
+    ],
+    [
+     "age",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "wave"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "sincere_o",
+     "wave"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ]
+   ],
+   "threshold": 0.4,
+   "unseen": 0.7145432692307693,
+   "frac01": 0.1736778846153846,
+   "nonfinite": 0,
+   "dropped": 1,
+   "train_auc": 0.9584920401679555,
+   "auc": 0.5105627705627704,
+   "pr_auc": 0.16124587095262427,
+   "log_loss": 1.6242112250458973,
+   "brier": 0.23105690069333473,
+   "f1": 0.26370757180156656,
+   "acc": 0.32211538461538464
+  },
+  {
+   "fold": 3,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "clubbing",
+    "reading",
+    "importance_same_race",
+    "age"
+   ],
+   "parents": [
+    "sincere_o",
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 363800,
+   "edges": [
+    [
+     "sincere_o",
+     "field"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "age",
+     "field"
+    ],
+    [
+     "importance_same_race",
+     "field"
+    ],
+    [
+     "importance_same_race",
+     "age"
+    ],
+    [
+     "importance_same_race",
+     "clubbing"
+    ],
+    [
+     "importance_same_race",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "importance_same_race",
+     "expected_num_matches"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "reading",
+     "field"
+    ],
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "importance_same_race"
+    ],
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "importance_same_race"
+    ],
+    [
+     "shared_interests_important",
+     "reading"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ],
+    [
+     "pref_o_shared_interests",
+     "field"
+    ]
+   ],
+   "threshold": 0.375,
+   "unseen": 0.7985948477751756,
+   "frac01": 0.12763466042154567,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.9641343252743473,
+   "auc": 0.4979594417183197,
+   "pr_auc": 0.15073735376840489,
+   "log_loss": 1.4437159333977272,
+   "brier": 0.2390100825970012,
+   "f1": 0.2479240806642942,
+   "acc": 0.2576112412177986
+  },
+  {
+   "fold": 4,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "clubbing",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "race",
+    "race_o",
+    "music"
+   ],
+   "parents": [
+    "field",
+    "clubbing",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "sincere_o"
+   ],
+   "n_configs": 363200,
+   "edges": [
+    [
+     "race",
+     "field"
+    ],
+    [
+     "race",
+     "clubbing"
+    ],
+    [
+     "race",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "race",
+     "expected_num_matches"
+    ],
+    [
+     "race",
+     "music"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "match"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "music",
+     "field"
+    ],
+    [
+     "music",
+     "clubbing"
+    ],
+    [
+     "music",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "music",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "music"
+    ],
+    [
+     "shared_interests_important",
+     "race"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ]
+   ],
+   "threshold": 0.26666666666666666,
+   "unseen": 0.9463647199046484,
+   "frac01": 0.02800953516090584,
+   "nonfinite": 0,
+   "dropped": 1,
+   "train_auc": 0.8717360486079478,
+   "auc": 0.501763249005896,
+   "pr_auc": 0.2103637473432049,
+   "log_loss": 0.8637427039035612,
+   "brier": 0.24686628666602953,
+   "f1": 0.3445807770961145,
+   "acc": 0.2359952324195471
+  }
+ ],
+ "pooled_auc": 0.5086212520347428,
+ "pooled_log_loss": 1.2693929598743305,
+ "pooled_brier": 0.24068544664803035,
+ "seconds": 469.6
+}

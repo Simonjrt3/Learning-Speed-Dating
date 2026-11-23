@@ -1,0 +1,136 @@
+{
+ "selected": [
+  "field",
+  "sincere_o",
+  "expected_num_matches",
+  "expected_num_interested_in_me",
+  "shared_interests_important",
+  "pref_o_shared_interests",
+  "age_o",
+  "clubbing",
+  "age",
+  "race_o"
+ ],
+ "match_parents": [
+  "expected_num_interested_in_me",
+  "expected_num_matches",
+  "field",
+  "shared_interests_important",
+  "sincere_o"
+ ],
+ "match_parent_configs": 494000,
+ "markov_blanket": [
+  "expected_num_interested_in_me",
+  "expected_num_matches",
+  "field",
+  "shared_interests_important",
+  "sincere_o"
+ ],
+ "edges": [
+  [
+   "age",
+   "field"
+  ],
+  [
+   "age_o",
+   "pref_o_shared_interests"
+  ],
+  [
+   "clubbing",
+   "age"
+  ],
+  [
+   "clubbing",
+   "field"
+  ],
+  [
+   "expected_num_interested_in_me",
+   "age"
+  ],
+  [
+   "expected_num_interested_in_me",
+   "clubbing"
+  ],
+  [
+   "expected_num_interested_in_me",
+   "field"
+  ],
+  [
+   "expected_num_interested_in_me",
+   "match"
+  ],
+  [
+   "expected_num_matches",
+   "age"
+  ],
+  [
+   "expected_num_matches",
+   "clubbing"
+  ],
+  [
+   "expected_num_matches",
+   "expected_num_interested_in_me"
+  ],
+  [
+   "expected_num_matches",
+   "field"
+  ],
+  [
+   "expected_num_matches",
+   "match"
+  ],
+  [
+   "field",
+   "match"
+  ],
+  [
+   "shared_interests_important",
+   "age"
+  ],
+  [
+   "shared_interests_important",
+   "clubbing"
+  ],
+  [
+   "shared_interests_important",
+   "expected_num_interested_in_me"
+  ],
+  [
+   "shared_interests_important",
+   "expected_num_matches"
+  ],
+  [
+   "shared_interests_important",
+   "field"
+  ],
+  [
+   "shared_interests_important",
+   "match"
+  ],
+  [
+   "sincere_o",
+   "match"
+  ],
+  [
+   "sincere_o",
+   "race_o"
+  ]
+ ],
+ "threshold": 0.2857142857142857,
+ "metrics": {
+  "accuracy": 0.6937151949085123,
+  "precision": 0.2670157068062827,
+  "recall": 0.4927536231884058,
+  "f1": 0.3463497453310696,
+  "roc_auc": 0.6228387393604785,
+  "pr_auc": 0.23552948366161552,
+  "log_loss": 2.6390333003611692,
+  "non_finite_posteriors": 0.0,
+  "true_positives": 102.0,
+  "true_negatives": 770.0,
+  "false_positives": 280.0,
+  "false_negatives": 105.0
+ },
+ "fallback_warnings": [],
+ "seconds": 152.0
+}

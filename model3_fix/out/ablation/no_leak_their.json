@@ -1,0 +1,173 @@
+{
+ "config": {
+  "name": "no_leak",
+  "leak": false,
+  "forced": true,
+  "recode": false,
+  "mi_correct": false,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "their",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "field",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "age_o",
+    "clubbing",
+    "age",
+    "race_o",
+    "race"
+   ],
+   "parents": [
+    "shared_interests_important",
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 617500,
+   "edges": [
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "race"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "age",
+     "field"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "race",
+     "field"
+    ],
+    [
+     "race",
+     "age"
+    ],
+    [
+     "race",
+     "clubbing"
+    ],
+    [
+     "race",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "race",
+     "expected_num_matches"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ],
+    [
+     "age_o",
+     "pref_o_shared_interests"
+    ],
+    [
+     "race_o",
+     "pref_o_shared_interests"
+    ],
+    [
+     "race_o",
+     "age_o"
+    ]
+   ],
+   "threshold": 0.3,
+   "unseen": 0.056483691328560064,
+   "frac01": 0.5536992840095465,
+   "nonfinite": 0,
+   "dropped": 1,
+   "train_auc": 0.9030909972245967,
+   "auc": 0.5916701173222912,
+   "pr_auc": 0.21300626419941557,
+   "log_loss": 3.5475798031681345,
+   "brier": 0.17586355336473866,
+   "f1": 0.3041144901610018,
+   "acc": 0.690533015115354
+  }
+ ],
+ "pooled_auc": 0.5916701173222912,
+ "pooled_log_loss": 3.5475798031681345,
+ "pooled_brier": 0.17586355336473866,
+ "seconds": 74.0
+}

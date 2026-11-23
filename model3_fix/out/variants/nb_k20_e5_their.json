@@ -1,0 +1,130 @@
+{
+ "kind": "nb",
+ "k": 20,
+ "ess": 5.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o",
+    "race",
+    "tvsports",
+    "funny",
+    "concerts",
+    "intelligence",
+    "importance_same_race",
+    "pref_o_funny",
+    "funny_important",
+    "attractive",
+    "dining"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ],
+    [
+     "match",
+     "clubbing"
+    ],
+    [
+     "match",
+     "age"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "reading"
+    ],
+    [
+     "match",
+     "race_o"
+    ],
+    [
+     "match",
+     "race"
+    ],
+    [
+     "match",
+     "tvsports"
+    ],
+    [
+     "match",
+     "funny"
+    ],
+    [
+     "match",
+     "concerts"
+    ],
+    [
+     "match",
+     "intelligence"
+    ],
+    [
+     "match",
+     "importance_same_race"
+    ],
+    [
+     "match",
+     "pref_o_funny"
+    ],
+    [
+     "match",
+     "funny_important"
+    ],
+    [
+     "match",
+     "attractive"
+    ],
+    [
+     "match",
+     "dining"
+    ]
+   ],
+   "threshold": 0.2083407316084813,
+   "auc": 0.6573890039107431,
+   "pr_auc": 0.2776155982251364,
+   "log_loss": 0.43414129501070603,
+   "brier": 0.13341806492395872,
+   "f1": 0.34527687296416937,
+   "acc": 0.6801909307875895
+  }
+ ],
+ "pooled_auc": 0.6573890039107431,
+ "pooled_log_loss": 0.43414129501070603,
+ "pooled_brier": 0.13341806492395872,
+ "fold_auc": [
+  0.6573890039107431
+ ],
+ "fold_f1": [
+  0.34527687296416937
+ ]
+}

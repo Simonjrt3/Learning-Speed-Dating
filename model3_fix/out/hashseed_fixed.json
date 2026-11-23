@@ -1,0 +1,41 @@
+{
+ "summary": {
+  "seeds": 6,
+  "crashed": 6,
+  "aucs": [],
+  "f1s": [],
+  "distinct_edge_sets": 0
+ },
+ "runs": [
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "0"
+  },
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "1"
+  },
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "2"
+  },
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "3"
+  },
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "4"
+  },
+  {
+   "ok": false,
+   "error": "Loops are not allowed. Adding the edge from (pref_o_shared_interests->match) forms a loop.",
+   "seed": "5"
+  }
+ ]
+}
