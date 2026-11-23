@@ -1,0 +1,144 @@
+{
+ "kind": "pc_nb",
+ "k": 10,
+ "ess": 5.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ],
+    [
+     "match",
+     "clubbing"
+    ],
+    [
+     "match",
+     "age"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "reading"
+    ],
+    [
+     "match",
+     "race_o"
+    ],
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "d_age",
+     "age_o"
+    ],
+    [
+     "expected_num_matches",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "music"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "music"
+    ],
+    [
+     "race_o",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "race_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ]
+   ],
+   "threshold": 0.22521652101909184,
+   "auc": 0.6653623188405797,
+   "pr_auc": 0.2852362933772149,
+   "log_loss": 0.5514982200723377,
+   "brier": 0.143277811628578,
+   "f1": 0.35093696763202725,
+   "acc": 0.6968973747016707
+  }
+ ],
+ "pooled_auc": 0.6653623188405797,
+ "pooled_log_loss": 0.5514982200723377,
+ "pooled_brier": 0.143277811628578,
+ "fold_auc": [
+  0.6653623188405797
+ ],
+ "fold_f1": [
+  0.35093696763202725
+ ]
+}

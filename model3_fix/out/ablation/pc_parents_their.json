@@ -1,0 +1,127 @@
+{
+ "config": {
+  "name": "pc_parents",
+  "leak": false,
+  "forced": false,
+  "recode": true,
+  "mi_correct": true,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "their",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "parents": [],
+   "n_configs": 1,
+   "edges": [
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "d_age",
+     "age_o"
+    ],
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "music"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "music"
+    ],
+    [
+     "race_o",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "race_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ]
+   ],
+   "threshold": 0.19954033851861916,
+   "unseen": 0.0,
+   "frac01": 0.12967382657120127,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.7421828194451372,
+   "auc": 0.6411387163561076,
+   "pr_auc": 0.2588764009648636,
+   "log_loss": 0.6431315285796496,
+   "brier": 0.13560222519752502,
+   "f1": 0.31278195488721805,
+   "acc": 0.6364359586316627
+  }
+ ],
+ "pooled_auc": 0.6411387163561076,
+ "pooled_log_loss": 0.6431315285796496,
+ "pooled_brier": 0.13560222519752502,
+ "seconds": 24.3
+}

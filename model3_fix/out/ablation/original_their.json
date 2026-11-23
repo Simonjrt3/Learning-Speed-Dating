@@ -1,0 +1,145 @@
+{
+ "config": {
+  "name": "original",
+  "leak": true,
+  "forced": true,
+  "recode": false,
+  "mi_correct": false,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "their",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "field",
+    "sincere_o",
+    "expected_num_matches",
+    "expected_num_interested_in_me",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "age_o",
+    "clubbing",
+    "age",
+    "race_o"
+   ],
+   "parents": [
+    "shared_interests_important",
+    "field",
+    "expected_num_interested_in_me",
+    "expected_num_matches",
+    "sincere_o"
+   ],
+   "n_configs": 494000,
+   "edges": [
+    [
+     "shared_interests_important",
+     "field"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "field",
+     "match"
+    ],
+    [
+     "age",
+     "field"
+    ],
+    [
+     "clubbing",
+     "field"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "field"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "age"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "clubbing"
+    ],
+    [
+     "expected_num_interested_in_me",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "field"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "expected_num_interested_in_me"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "sincere_o",
+     "race_o"
+    ],
+    [
+     "sincere_o",
+     "match"
+    ],
+    [
+     "age_o",
+     "pref_o_shared_interests"
+    ]
+   ],
+   "threshold": 0.2857142857142857,
+   "unseen": 0.03898170246618934,
+   "frac01": 0.4677804295942721,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.8816780813082521,
+   "auc": 0.6228387393604785,
+   "pr_auc": 0.23552948366161552,
+   "log_loss": 2.6390333003611692,
+   "brier": 0.16119588125132947,
+   "f1": 0.3463497453310696,
+   "acc": 0.6937151949085123
+  }
+ ],
+ "pooled_auc": 0.6228387393604785,
+ "pooled_log_loss": 2.6390333003611692,
+ "pooled_brier": 0.16119588125132947,
+ "seconds": 40.4
+}

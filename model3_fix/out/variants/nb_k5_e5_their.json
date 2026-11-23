@@ -1,0 +1,55 @@
+{
+ "kind": "nb",
+ "k": 5,
+ "ess": 5.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ]
+   ],
+   "threshold": 0.17513480417421876,
+   "auc": 0.6367011732229123,
+   "pr_auc": 0.23877057548915273,
+   "log_loss": 0.431897087138664,
+   "brier": 0.13371835034207438,
+   "f1": 0.343878954607978,
+   "acc": 0.6205250596658711
+  }
+ ],
+ "pooled_auc": 0.6367011732229123,
+ "pooled_log_loss": 0.431897087138664,
+ "pooled_brier": 0.13371835034207438,
+ "fold_auc": [
+  0.6367011732229123
+ ],
+ "fold_f1": [
+  0.343878954607978
+ ]
+}

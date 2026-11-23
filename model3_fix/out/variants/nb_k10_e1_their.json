@@ -1,0 +1,80 @@
+{
+ "kind": "nb",
+ "k": 10,
+ "ess": 1.0,
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "d_age",
+    "age_o",
+    "clubbing",
+    "age",
+    "music",
+    "reading",
+    "race_o"
+   ],
+   "edges": [
+    [
+     "match",
+     "expected_num_matches"
+    ],
+    [
+     "match",
+     "shared_interests_important"
+    ],
+    [
+     "match",
+     "pref_o_shared_interests"
+    ],
+    [
+     "match",
+     "d_age"
+    ],
+    [
+     "match",
+     "age_o"
+    ],
+    [
+     "match",
+     "clubbing"
+    ],
+    [
+     "match",
+     "age"
+    ],
+    [
+     "match",
+     "music"
+    ],
+    [
+     "match",
+     "reading"
+    ],
+    [
+     "match",
+     "race_o"
+    ]
+   ],
+   "threshold": 0.18813544476385172,
+   "auc": 0.637437313089487,
+   "pr_auc": 0.2618345641677812,
+   "log_loss": 0.4328355700867751,
+   "brier": 0.13334201829121095,
+   "f1": 0.3303303303303303,
+   "acc": 0.645186953062848
+  }
+ ],
+ "pooled_auc": 0.637437313089487,
+ "pooled_log_loss": 0.4328355700867751,
+ "pooled_brier": 0.13334201829121095,
+ "fold_auc": [
+  0.637437313089487
+ ],
+ "fold_f1": [
+  0.3303303303303303
+ ]
+}

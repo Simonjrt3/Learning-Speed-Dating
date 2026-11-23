@@ -1,0 +1,677 @@
+{
+ "config": {
+  "name": "recode",
+  "leak": false,
+  "forced": true,
+  "recode": true,
+  "mi_correct": true,
+  "smooth": 0.0,
+  "max_features": 10,
+  "max_cond_vars": 3,
+  "alpha": 0.05
+ },
+ "split": "wave",
+ "folds": [
+  {
+   "fold": 0,
+   "sel": [
+    "expected_num_matches",
+    "tvsports",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "reading",
+    "intelligence",
+    "d_age",
+    "clubbing",
+    "race",
+    "race_o"
+   ],
+   "parents": [
+    "shared_interests_important",
+    "tvsports",
+    "expected_num_matches",
+    "reading",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 2000,
+   "edges": [
+    [
+     "shared_interests_important",
+     "tvsports"
+    ],
+    [
+     "shared_interests_important",
+     "race"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "intelligence"
+    ],
+    [
+     "shared_interests_important",
+     "reading"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "tvsports",
+     "race"
+    ],
+    [
+     "tvsports",
+     "expected_num_matches"
+    ],
+    [
+     "tvsports",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "race"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "clubbing",
+     "race"
+    ],
+    [
+     "clubbing",
+     "tvsports"
+    ],
+    [
+     "clubbing",
+     "expected_num_matches"
+    ],
+    [
+     "intelligence",
+     "expected_num_matches"
+    ],
+    [
+     "intelligence",
+     "race"
+    ],
+    [
+     "intelligence",
+     "tvsports"
+    ],
+    [
+     "intelligence",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "race"
+    ],
+    [
+     "reading",
+     "tvsports"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "intelligence"
+    ],
+    [
+     "reading",
+     "match"
+    ],
+    [
+     "pref_o_shared_interests",
+     "race_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ]
+   ],
+   "threshold": 0.24,
+   "unseen": 0.3537331701346389,
+   "frac01": 0.2631578947368421,
+   "nonfinite": 0,
+   "dropped": 0,
+   "train_auc": 0.8178616354184072,
+   "auc": 0.5220462427745665,
+   "pr_auc": 0.1656658148860554,
+   "log_loss": 2.0461107887362044,
+   "brier": 0.1945399451079546,
+   "f1": 0.2383053839364519,
+   "acc": 0.4718482252141983
+  },
+  {
+   "fold": 1,
+   "sel": [
+    "expected_num_matches",
+    "tvsports",
+    "clubbing",
+    "shared_interests_important",
+    "pref_o_shared_interests",
+    "age",
+    "age_o",
+    "music",
+    "reading",
+    "importance_same_race"
+   ],
+   "parents": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "tvsports",
+    "clubbing",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 2500,
+   "edges": [
+    [
+     "reading",
+     "age"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "reading",
+     "importance_same_race"
+    ],
+    [
+     "reading",
+     "tvsports"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "music"
+    ],
+    [
+     "expected_num_matches",
+     "shared_interests_important"
+    ],
+    [
+     "expected_num_matches",
+     "importance_same_race"
+    ],
+    [
+     "expected_num_matches",
+     "tvsports"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "music",
+     "shared_interests_important"
+    ],
+    [
+     "music",
+     "importance_same_race"
+    ],
+    [
+     "music",
+     "tvsports"
+    ],
+    [
+     "music",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "importance_same_race"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "tvsports",
+     "importance_same_race"
+    ],
+    [
+     "tvsports",
+     "shared_interests_important"
+    ],
+    [
+     "tvsports",
+     "match"
+    ],
+    [
+     "clubbing",
+     "music"
+    ],
+    [
+     "clubbing",
+     "shared_interests_important"
+    ],
+    [
+     "clubbing",
+     "importance_same_race"
+    ],
+    [
+     "clubbing",
+     "tvsports"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "clubbing",
+     "expected_num_matches"
+    ],
+    [
+     "clubbing",
+     "match"
+    ],
+    [
+     "match",
+     "importance_same_race"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ]
+   ],
+   "threshold": 0.23529411764705882,
+   "unseen": 0.31286894923258557,
+   "frac01": 0.31641086186540734,
+   "nonfinite": 142,
+   "dropped": 3,
+   "train_auc": 0.8483754032488089,
+   "auc": 0.49618881043380625,
+   "pr_auc": 0.1476994676405392,
+   "log_loss": 2.5720811401843937,
+   "brier": 0.19653505565293553,
+   "f1": 0.22354104846686448,
+   "acc": 0.5365997638724912
+  },
+  {
+   "fold": 2,
+   "sel": [
+    "expected_num_matches",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "d_age",
+    "age",
+    "age_o",
+    "pref_o_funny",
+    "clubbing",
+    "funny_important",
+    "reading"
+   ],
+   "parents": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "age",
+    "pref_o_shared_interests",
+    "d_age"
+   ],
+   "n_configs": 2500,
+   "edges": [
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "clubbing"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "funny_important"
+    ],
+    [
+     "shared_interests_important",
+     "funny_important"
+    ],
+    [
+     "shared_interests_important",
+     "reading"
+    ],
+    [
+     "shared_interests_important",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "age"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "age",
+     "match"
+    ],
+    [
+     "match",
+     "funny_important"
+    ],
+    [
+     "pref_o_funny",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age_o"
+    ],
+    [
+     "pref_o_shared_interests",
+     "pref_o_funny"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ],
+    [
+     "d_age",
+     "age"
+    ],
+    [
+     "d_age",
+     "match"
+    ]
+   ],
+   "threshold": 0.3259423503325942,
+   "unseen": 0.15204326923076922,
+   "frac01": 0.5024038461538461,
+   "nonfinite": 10,
+   "dropped": 3,
+   "train_auc": 0.8917942724039948,
+   "auc": 0.5546658549783551,
+   "pr_auc": 0.17914212141642705,
+   "log_loss": 3.618173569294597,
+   "brier": 0.1876448132655519,
+   "f1": 0.2724867724867725,
+   "acc": 0.6694711538461539
+  },
+  {
+   "fold": 3,
+   "sel": [
+    "expected_num_matches",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "d_age",
+    "clubbing",
+    "reading",
+    "importance_same_race",
+    "age",
+    "tvsports",
+    "age_o"
+   ],
+   "parents": [
+    "clubbing",
+    "shared_interests_important",
+    "expected_num_matches",
+    "pref_o_shared_interests",
+    "d_age"
+   ],
+   "n_configs": 2500,
+   "edges": [
+    [
+     "tvsports",
+     "clubbing"
+    ],
+    [
+     "tvsports",
+     "shared_interests_important"
+    ],
+    [
+     "tvsports",
+     "expected_num_matches"
+    ],
+    [
+     "tvsports",
+     "reading"
+    ],
+    [
+     "clubbing",
+     "importance_same_race"
+    ],
+    [
+     "clubbing",
+     "age"
+    ],
+    [
+     "clubbing",
+     "match"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "expected_num_matches",
+     "age"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "importance_same_race",
+     "age"
+    ],
+    [
+     "pref_o_shared_interests",
+     "age"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ],
+    [
+     "age_o",
+     "age"
+    ],
+    [
+     "d_age",
+     "age"
+    ],
+    [
+     "d_age",
+     "match"
+    ]
+   ],
+   "threshold": 0.2727272727272727,
+   "unseen": 0.13817330210772832,
+   "frac01": 0.4566744730679157,
+   "nonfinite": 0,
+   "dropped": 2,
+   "train_auc": 0.8679829841134581,
+   "auc": 0.5290332300275482,
+   "pr_auc": 0.16364490954908448,
+   "log_loss": 3.287268463070211,
+   "brier": 0.18753026358872638,
+   "f1": 0.2332155477031802,
+   "acc": 0.6188524590163934
+  },
+  {
+   "fold": 4,
+   "sel": [
+    "expected_num_matches",
+    "d_age",
+    "clubbing",
+    "pref_o_shared_interests",
+    "shared_interests_important",
+    "race",
+    "race_o",
+    "music",
+    "movies",
+    "reading"
+   ],
+   "parents": [
+    "expected_num_matches",
+    "shared_interests_important",
+    "clubbing",
+    "d_age",
+    "pref_o_shared_interests"
+   ],
+   "n_configs": 3125,
+   "edges": [
+    [
+     "music",
+     "expected_num_matches"
+    ],
+    [
+     "music",
+     "race"
+    ],
+    [
+     "music",
+     "shared_interests_important"
+    ],
+    [
+     "music",
+     "clubbing"
+    ],
+    [
+     "music",
+     "movies"
+    ],
+    [
+     "expected_num_matches",
+     "match"
+    ],
+    [
+     "race",
+     "clubbing"
+    ],
+    [
+     "shared_interests_important",
+     "expected_num_matches"
+    ],
+    [
+     "shared_interests_important",
+     "match"
+    ],
+    [
+     "clubbing",
+     "match"
+    ],
+    [
+     "movies",
+     "shared_interests_important"
+    ],
+    [
+     "movies",
+     "clubbing"
+    ],
+    [
+     "movies",
+     "expected_num_matches"
+    ],
+    [
+     "movies",
+     "race"
+    ],
+    [
+     "reading",
+     "expected_num_matches"
+    ],
+    [
+     "reading",
+     "race"
+    ],
+    [
+     "reading",
+     "clubbing"
+    ],
+    [
+     "reading",
+     "shared_interests_important"
+    ],
+    [
+     "reading",
+     "movies"
+    ],
+    [
+     "reading",
+     "music"
+    ],
+    [
+     "d_age",
+     "match"
+    ],
+    [
+     "pref_o_shared_interests",
+     "match"
+    ]
+   ],
+   "threshold": 0.2727272727272727,
+   "unseen": 0.2401668653158522,
+   "frac01": 0.39809296781883197,
+   "nonfinite": 0,
+   "dropped": 1,
+   "train_auc": 0.879306687091481,
+   "auc": 0.5214278674756616,
+   "pr_auc": 0.21510658902861013,
+   "log_loss": 3.706277441145739,
+   "brier": 0.22311754015884955,
+   "f1": 0.30671506352087113,
+   "acc": 0.5446960667461264
+  }
+ ],
+ "pooled_auc": 0.5250307541285087,
+ "pooled_log_loss": 3.050236259338744,
+ "pooled_brier": 0.19786853025214168,
+ "seconds": 258.7
+}

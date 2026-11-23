@@ -1,0 +1,39 @@
+{
+ "field": {
+  "states": 260,
+  "mi": 0.04118233235411985,
+  "corrected": 0.022996684270985456,
+  "rank_corrected": 1
+ },
+ "sincere_o": {
+  "states": 4,
+  "mi": 0.014329903944142658,
+  "corrected": 0.01411925937175114,
+  "rank_corrected": 2
+ },
+ "expected_num_matches": {
+  "states": 5,
+  "mi": 0.01003743494393551,
+  "corrected": 0.009756575514080152,
+  "rank_corrected": 3
+ },
+ "expected_num_interested_in_me": {
+  "states": 19,
+  "mi": 0.005323701584284701,
+  "corrected": 0.004059834149935593,
+  "rank_corrected": 4
+ },
+ "shared_interests_important": {
+  "states": 5,
+  "mi": 0.0030223628663208074,
+  "corrected": 0.00274150343646545,
+  "rank_corrected": 5
+ },
+ "pref_o_shared_interests": {
+  "states": 5,
+  "mi": 0.002498115950745089,
+  "corrected": 0.0022172565208897314,
+  "rank_corrected": 6
+ },
+ "field_null_mean": 0.020653092177982658
+}
